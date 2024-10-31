@@ -1,0 +1,582 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Related Posts Plugin v3.1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2010-03-25 01:09+0000\n"
+"Last-Translator: Maza <admin@cdmazika.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-Country: EGYPT\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: includes.php:24
+#: includes.php:35
+#@ rpp
+msgid "Related posts:"
+msgstr "محتويات ذات الصلة:"
+
+#: includes.php:26
+#: includes.php:37
+#: template-metabox.php:28
+#: template-widget.php:13
+#@ rpp
+msgid "No related posts."
+msgstr "لا يوجد محتويات ذات الصلة"
+
+#: includes.php:93
+#@ rpp
+msgid "MySQL error on adding rpp_title"
+msgstr "خطأ في قاعدة البيانات اثناء إضافة rpp_title"
+
+#: includes.php:98
+#@ rpp
+msgid "MySQL error on adding rpp_content"
+msgstr "خطأ في قاعدة البيانات أثناء إضافة rpp_content"
+
+#: includes.php:109
+#@ rpp
+msgid "MySQL error on creating rpp_keyword_cache table"
+msgstr "خطأ في قاعدة البيانات أثناء إنشاء rpp_keyword_cache table"
+
+#: includes.php:120
+#@ rpp
+msgid "MySQL error on creating rpp_related_cache table"
+msgstr "خطأ في قاعدة البيانات أثناء إنشاء rpp_related_cache table"
+
+#: includes.php:195
+#: includes.php:229
+#: includes.php:243
+#@ rpp
+msgid "Related Posts (RPP)"
+msgstr "محتويات ذات الصلة: (RPP)"
+
+#: includes.php:205
+#@ rpp
+msgid "Settings"
+msgstr "إعدادات"
+
+#: includes.php:262
+msgid "Title:"
+msgstr ""
+
+#: includes.php:263
+#: options.php:457
+#: options.php:526
+#@ rpp
+msgid "Help promote Related Posts Plugin?"
+msgstr "ساهم في تطوير الإضافة؟"
+
+#: includes.php:440
+#@ rpp
+msgid "Related Posts"
+msgstr "محتويات ذات الصلة"
+
+#: magic.php:71
+#@ rpp
+msgid "Example post "
+msgstr "مثال مشاركة"
+
+#: magic.php:344
+#: options.php:459
+#: options.php:527
+#@ rpp
+msgid "Related posts brought to you by <a href='%s'>Related Posts Plugin</a>."
+msgstr "إضافة المحتويات ذات الصلة مقدم لكم بواسطة <a href='%s'>Related Posts Plugin</a>. <br /> قام بالترجة للغة العربية <a href='http://www.cdmazika.com'>CDMazika.com</a>"
+
+#: options.php:10
+#@ rpp
+msgid "Please move the RPP template files into your theme to complete installation. Simply move the sample template files (currently in <code>wp-content/plugins/related-posts-plugin/rpp-templates/</code>) to the <code>TEMPLATEPATH</code> directory."
+msgstr "برجاء نفل ملفات القوالب إلي مجلد التصميم للإنتهاء من عملية التثبيت. فقط قم بنقل الملفات الموجودة داخال المجلد <code>wp-content/plugins/related-posts-plugin/rpp-templates/</code> إلى المجلد <code>TEMPLATEPATH</code>"
+
+#: options.php:15
+#@ rpp
+msgid "No RPP template files were found in your theme (<code>TEMPLATEPATH</code>)  so the templating feature has been turned off."
+msgstr "لم يتم العثور على القوالب بداخل مجلد التصميم الخاص بك (<code>TEMPLATEPATH</code>) لذلك سوف يتم إيقاف خاصية القوالب"
+
+#: options.php:26
+#@ rpp
+msgid "The MyISAM check has been overridden. You may now use the \"consider titles\" and \"consider bodies\" relatedness criteria."
+msgstr "لقد تم لإستبدال الMyISAM. يمكنك الآن إستخدام \"consider titles\" و \"consider bodies\" كمعايير للتشابه"
+
+#: options.php:35
+#, php-format
+#@ rpp
+msgid "RPP's \"consider titles\" and \"consider bodies\" relatedness criteria require your <code>%s</code> table to use the <a href='http://dev.mysql.com/doc/refman/5.0/en/storage-engines.html'>MyISAM storage engine</a>, but the table seems to be using the <code>%s</code> engine. These two options have been disabled."
+msgstr "معايير التشابه \"consider titles\" و \"consider bodies\" تحتاج إلى جدول <code>%s</code> الخاص بك لإستخدام <a href='http://dev.mysql.com/doc/refman/5.0/en/storage-engines.html'>محرك التخزين MyISAM</a>, و لكن الجدول الآن يستخدم  <code>%s</code>. لقد تم إيقاف هاتان الخاصياتان."
+
+#: options.php:37
+#, php-format
+#@ rpp
+msgid "To restore these features, please update your <code>%s</code> table by executing the following SQL directive: <code>ALTER TABLE `%s` ENGINE = MyISAM;</code> . No data will be erased by altering the table's engine, although there are performance implications."
+msgstr "لإستعاد هذه الخواص, برجاء تحديث جدول <code>%s</code> الخاص بك عن طريق تنفيذ التوجيه التالي للSQL:  <code>ALTER TABLE `%s` ENGINE = MyISAM;</code> . وسوف لا تمحى البيانات عن طريق تغيير الجدول المحرك ، وبالرغم من وجود آثار للأداء."
+
+#: options.php:39
+#, php-format
+#@ rpp
+msgid "If, despite this check, you are sure that <code>%s</code> is using the MyISAM engine, press this magic button:"
+msgstr "إذا ، على الرغم من هذا الاختيار ، كنت متأكدا من أن <code>%s</code> يستخدم المحرك MyISAM ، اضغط على هذا الزر السحري :"
+
+#: options.php:42
+#@ rpp
+msgid "Trust me. Let me use MyISAM features."
+msgstr "ثق بي. اسمحوا لي أن استخدام ميزات MyISAM."
+
+#: options.php:65
+#@ rpp
+msgid "The RPP database had an error but has been fixed."
+msgstr "قاعدة بيانات RPP حدث بها خطأ ولكن تم إصلاحه."
+
+#: options.php:67
+#@ rpp
+msgid "The RPP database has an error which could not be fixed."
+msgstr "قاعدة بيانات RPP  قد حدث بها خطأ لم نتمكن من إصلاحه."
+
+#: options.php:68
+#@ rpp
+msgid "Please try <A>manual SQL setup</a>."
+msgstr "يرجى محاولة <A>دليل مزود إعدادات SQL.</a>"
+
+#: options.php:99
+#@ rpp
+msgid "Options saved!"
+msgstr "تم حفظ الخيارات!"
+
+#: options.php:135
+#@ rpp
+msgid "word"
+msgstr "كلمة"
+
+#: options.php:136
+#@ rpp
+msgid "tag"
+msgstr "علامة"
+
+#: options.php:137
+#@ rpp
+msgid "category"
+msgstr "فئة"
+
+#: options.php:141
+#: options.php:158
+#: options.php:170
+#@ rpp
+msgid "do not consider"
+msgstr "لا تنظر"
+
+#: options.php:142
+#: options.php:159
+#: options.php:172
+#@ rpp
+msgid "consider"
+msgstr "إنظر"
+
+#: options.php:144
+#: options.php:174
+#, php-format
+#@ rpp
+msgid "require at least one %s in common"
+msgstr "تتطلب ٪ واحدة على الأقل مشتركة"
+
+#: options.php:146
+#: options.php:176
+#, php-format
+#@ rpp
+msgid "require more than one %s in common"
+msgstr "تتطلب أكثر من ٪ واحدة مشتركة"
+
+#: options.php:160
+#@ rpp
+msgid "consider with extra weight"
+msgstr "النظر مع الإعتبار الزائد"
+
+#: options.php:188
+#@ rpp
+msgid "Related Posts Plugin version history (RSS 2.0)"
+msgstr "تاريخ إصدار إضافة المحتويات ذات الصلة RPP (RSS 2.0)"
+
+#: options.php:242
+#@ rpp
+msgid "Related Posts Plugin Options"
+msgstr "إعدادات إضافة المحتويات ذات الصلة RPP"
+
+#: options.php:253
+#@ rpp
+msgid "Donate to EscalateSEO for this plugin via PayPal"
+msgstr "تبرع لmitcho (مايكل يوشيتاكا إرلوين) لدعم هذه الإضافة عن طريق باي بال"
+
+#: options.php:255
+#@ rpp
+msgid "by <a href=\"http://www.escalateseo.com/code/\">EscalateSEO</a>"
+msgstr "من <a href=\\\"http://www.escalateseo.com/code/\\\">mitcho (مايكل芳贵Erlewine)</a>"
+
+#: options.php:255
+#@ rpp
+msgid "Follow <a href=\"http://twitter.com/rpp/\">Related Posts Plugin on Twitter</a>"
+msgstr "متابعة <a href=\\\"http://twitter.com/rpp/\\\">آخر أخبار إضافة المحتويات ذات الصلة على Twitter</a>"
+
+#: options.php:271
+#: options.php:304
+#: options.php:398
+#: options.php:466
+msgid "Click to toggle"
+msgstr ""
+
+#: options.php:274
+#@ rpp
+msgid "\"The Pool\""
+msgstr "\"التجمع\""
+
+#: options.php:276
+#@ rpp
+msgid "\"The Pool\" refers to the pool of posts and pages that are candidates for display as related to the current entry."
+msgstr "\"التجمع\" يشير إلى مجموعة من الأقسام والصفحات التي يتم ترشيحها للعرض."
+
+#: options.php:281
+#@ rpp
+msgid "Disallow by category:"
+msgstr "عدم السماح حسب الفئة :"
+
+#: options.php:283
+#@ rpp
+msgid "Disallow by tag:"
+msgstr "عدم السماح حسب العلامات :"
+
+#: options.php:285
+#@ rpp
+msgid "Show password protected posts?"
+msgstr "إظهار الموضوعات المحمية بكلمات سرية؟"
+
+#: options.php:291
+#@ rpp
+msgid "day(s)"
+msgstr "أيام"
+
+#: options.php:292
+#@ rpp
+msgid "week(s)"
+msgstr "أسابيع"
+
+#: options.php:293
+#@ rpp
+msgid "month(s)"
+msgstr "شهور"
+
+#: options.php:295
+#@ rpp
+msgid "Show only posts from the past NUMBER UNITS"
+msgstr "إظهار المشاركات من الNUMBER UNITS الماضية"
+
+#: options.php:307
+#@ rpp
+msgid "\"Relatedness\" options"
+msgstr "خيارات \"العلاقة\""
+
+#: options.php:310
+#, php-format
+#@ rpp
+msgid "RPP is different than the <a href=\"http://wasabi.pbwiki.com/Related%20Entries\">previous plugins it is based on</a> as it limits the related posts list by (1) a maximum number and (2) a <em>match threshold</em>."
+msgstr "RPP مختلفة عن <a href=\\\"http://wasabi.pbwiki.com/Related%20Entries\\\">الإضافات السابقة و ما تستند إليه</a> لأنه يحد من المحتويات المتشابهه قائمة من قبل (1) والحد الأقصى لعدد (2) على <em>عتبة المباراة.</em>"
+
+#: options.php:310
+#: options.php:324
+#: options.php:406
+#: options.php:411
+#: options.php:458
+#: options.php:475
+#: options.php:476
+#: options.php:480
+#: options.php:526
+#@ rpp
+msgid "more&gt;"
+msgstr "المزيد&gt;"
+
+#: options.php:310
+#@ rpp
+msgid "The higher the match threshold, the more restrictive, and you get less related posts overall. The default match threshold is 5. If you want to find an appropriate match threshhold, take a look at some post's related posts display and their scores. You can see what kinds of related posts are being picked up and with what kind of match scores, and determine an appropriate threshold for your site."
+msgstr "كلما ذاد ارتفاع نسبة التشابه ، كلما إزداد التقيد ، وتحصل على عدد أقل من المحتويات المتشابهه عموما. الافتراضي 5. إذا كنت تريد معرفة الرقم المناسب لك ، إنظر على المحتوياات ذات الصلة لأي من مشاراكاتك ودرجاتهم. يمكنك ان ترى ما هي أنواع المحتوياات ذات الصلة ويجري انتقاؤها ورقم التشابه الخاص بكل مشاركة ، ثم على هذا الأساس حدد نسبة مناسبة لموقعك."
+
+#: options.php:315
+#@ rpp
+msgid "Match threshold:"
+msgstr "نسبة التشابه:"
+
+#: options.php:316
+#@ rpp
+msgid "Titles: "
+msgstr "العناوين :"
+
+#: options.php:318
+#@ rpp
+msgid "Bodies: "
+msgstr "المحتويات:"
+
+#: options.php:320
+#@ rpp
+msgid "Tags: "
+msgstr "العلامات"
+
+#: options.php:322
+#@ rpp
+msgid "Categories: "
+msgstr "الأقسام:"
+
+#: options.php:324
+#@ rpp
+msgid "Cross-relate posts and pages?"
+msgstr "إوصل بين المشاراكات والصفحات؟"
+
+#: options.php:324
+#@ rpp
+msgid "When the \"Cross-relate posts and pages\" option is selected, the <code>related_posts()</code>, <code>related_pages()</code>, and <code>related_entries()</code> all will give the same output, returning both related pages and posts."
+msgstr "عندما  \"توصل بين المشاركات و الصفحات\", سوف يصبح لـ<code>related_posts()</code> و <code>related_pages()</code> و <code>related_entries()</code> نتيجة واحدة لإظهار المشاركات و الاصفحات المتشابهة معاً"
+
+#: options.php:385
+#@ rpp
+msgid "There is a new beta (%s) of Related Posts Plugin. You can <a href=\"%s\">download it here</a> at your own risk."
+msgstr "تم إصدار نسخة تجريبية جديدة من إضافة المحتويات المتشابهه (%s). يمكنك <a href=\"%s\">تحميلها من هنا</a> على مسؤوليتك الخاصة."
+
+#: options.php:387
+#@ rpp
+msgid "There is a new version (VERSION) of Related Posts Plugin available! You can <A>download it here</a>."
+msgstr "تم إصدار نسخة جديدة من إضافة المحتويات المتشابهه (RPP)! يمكنك <A>تحميلها من هنا</a>."
+
+#: options.php:401
+#@ rpp
+msgid "Display options <small>for your website</small>"
+msgstr "عرض الخيارات <small>للموقع الخاص بك</small>"
+
+#: options.php:406
+#@ rpp
+msgid "Automatically display related posts?"
+msgstr "عرض المحتويات ذات الصلة تلقائيا؟"
+
+#: options.php:406
+#@ rpp
+msgid "This option automatically displays related posts right after the content on single entry pages. If this option is off, you will need to manually insert <code>related_posts()</code> or variants (<code>related_pages()</code> and <code>related_entries()</code>) into your theme files."
+msgstr "هذة الخاصية تظهر المحتويات ذات الصلة تلقائياً مباشرتاً بعد المحتوي الأساسي في المشاراكات الفردية. إذا قمت بإيقاف هذه الخاصية سوف تحتاج إلى تعديل القوالب الخاصة بتصميم موقعك و إضافة <code>related_posts()</code> أو (<code>related_pages()</code> and <code>related_entries()</code>) بها."
+
+#: options.php:407
+#@ rpp
+msgid "Website display code example"
+msgstr "مثال كود العرض بالموقع"
+
+#: options.php:407
+#: options.php:477
+#@ rpp
+msgid "(Update options to reload.)"
+msgstr "(حدث الخيارات لإعادة التحميل.)"
+
+#: options.php:410
+#: options.php:479
+#@ rpp
+msgid "Maximum number of related posts:"
+msgstr "الحد الأقصى لعدد المحتويات ذات الصلة:"
+
+#: options.php:411
+#: options.php:480
+#@ rpp
+msgid "Display using a custom template file"
+msgstr "عرض باستخدام قالب مخصص"
+
+#: options.php:411
+#: options.php:480
+#@ rpp
+msgid "NEW!"
+msgstr "جديد!"
+
+#: options.php:411
+#: options.php:480
+#@ rpp
+msgid "This advanced option gives you full power to customize how your related posts are displayed. Templates (stored in your theme folder) are written in PHP."
+msgstr "هذا الخيار المتقدم يعطيك القوة الكاملة لتخصيص كيف يتم عرض المحتويات ذات الصلة. القوالب (المحفوظة في مجلد التصميم) مكتوبة بلغة PHP."
+
+#: options.php:413
+#: options.php:482
+#@ rpp
+msgid "Template file:"
+msgstr "ملف القالب :"
+
+#: options.php:423
+#@ rpp
+msgid "Before / after related entries:"
+msgstr "قبل / بعد الإدخالات ذات الصلة :"
+
+#: options.php:424
+#: options.php:429
+#: options.php:438
+#: options.php:493
+#: options.php:498
+#: options.php:507
+#@ rpp
+msgid "For example:"
+msgstr "مثال:"
+
+#: options.php:424
+#: options.php:429
+#: options.php:438
+#: options.php:493
+#: options.php:498
+#: options.php:507
+#@ rpp
+msgid " or "
+msgstr "أو"
+
+#: options.php:428
+#: options.php:497
+#@ rpp
+msgid "Before / after each related entry:"
+msgstr "قبل / بعد كل مدخل ذات الصلة :"
+
+#: options.php:432
+#: options.php:501
+#@ rpp
+msgid "Show excerpt?"
+msgstr "إظهار المقتطفات؟"
+
+#: options.php:433
+#: options.php:502
+#@ rpp
+msgid "Excerpt length (No. of words):"
+msgstr "الحد الأقصى لعدد الكلمات في المقتطفات:"
+
+#: options.php:437
+#@ rpp
+msgid "Before / after (Excerpt):"
+msgstr "قبل / بعد (المقتطفات) :"
+
+#: options.php:443
+#: options.php:512
+#@ rpp
+msgid "Order results:"
+msgstr "ترتيب النتائج:"
+
+#: options.php:445
+#: options.php:514
+#@ rpp
+msgid "score (high relevance to low)"
+msgstr "النتيجة (الأكثر ثم الأقل)"
+
+#: options.php:446
+#: options.php:515
+#@ rpp
+msgid "score (low relevance to high)"
+msgstr "النتيجة (الأقل ثم الأكثر)"
+
+#: options.php:447
+#: options.php:516
+#@ rpp
+msgid "date (new to old)"
+msgstr "التاريخ (الجديد إلى القديم)"
+
+#: options.php:448
+#: options.php:517
+#@ rpp
+msgid "date (old to new)"
+msgstr "التاريخ (القديم الى الجديد)"
+
+#: options.php:449
+#: options.php:518
+#@ rpp
+msgid "title (alphabetical)"
+msgstr "العناوين (أبجديا)"
+
+#: options.php:450
+#: options.php:519
+#@ rpp
+msgid "title (reverse alphabetical)"
+msgstr "العناوين (عكس الأبجدي)"
+
+#: options.php:455
+#: options.php:524
+#@ rpp
+msgid "Default display if no results:"
+msgstr "العرض الافتراضي إذا لم يتم لبعثور على نتائج:"
+
+#: options.php:459
+#: options.php:527
+#, php-format
+#@ rpp
+msgid "This option will add the code %s. Try turning it on, updating your options, and see the code in the code example to the right. These links and donations are greatly appreciated."
+msgstr "هذه الخاصية يوف تضيف %s. قم بتفعيلها, و تحديث خياراتك ثم إلقي نظرة على مثال كود العرض الظاهر على اليمين. هذه الروابط و التبرعات تقدر بإمتنان"
+
+#: options.php:469
+#@ rpp
+msgid "Display options <small>for RSS</small>"
+msgstr "عرض خيارات <small>الـRSS</small>"
+
+#: options.php:475
+#@ rpp
+msgid "Display related posts in feeds?"
+msgstr "عرض المحتويات ذات الصلة في تحديثات الـRSS؟"
+
+#: options.php:475
+#@ rpp
+msgid "This option displays related posts at the end of each item in your RSS and Atom feeds. No template changes are needed."
+msgstr "هذا الخيار يعرض المحتويات ذات الصلة في نهاية كل من تحديثات الآر إس إس والأتوم. لن تحتاج لتحديث أي قوالب."
+
+#: options.php:476
+#@ rpp
+msgid "Display related posts in the descriptions?"
+msgstr "عرض المحتويات ذات الصلة في الوصف؟"
+
+#: options.php:476
+#@ rpp
+msgid "This option displays the related posts in the RSS description fields, not just the content. If your feeds are set up to only display excerpts, however, only the description field is used, so this option is required for any display at all."
+msgstr "هذا الخيار يتيح لك عرض المحتويات ذات الصلة في خانات الوصف الخاصة بالـRSS, و ليس فقط المحتوى الخاص بها. إذا كانت الإعدادات الخاصة بتحديثات الـRSSتظهر فقط مقتطفات المواضيع إذا فيتم عرض خانة الوصف هذه فقط. في هذه الحالة فسوف يكون هذا الخيار مطلوب لأي عرض على الإطلاق."
+
+#: options.php:477
+#@ rpp
+msgid "RSS display code example"
+msgstr "مثال الكود الخاص بالأر إس إس."
+
+#: options.php:492
+#@ rpp
+msgid "Before / after related entries display:"
+msgstr "قبل / بعد عرض المدخلات ذات الصلة :"
+
+#: options.php:506
+#@ rpp
+msgid "Before / after (excerpt):"
+msgstr "قبل / بعد (المقتطفات) :"
+
+#: options.php:535
+#@ rpp
+msgid "Update options"
+msgstr "خيارات التحديث"
+
+#: options.php:536
+#@ rpp
+msgid "Do you really want to reset your configuration?"
+msgstr "هل تريد حقا إعادة الخيارات الخاصة بك إلى الخيارات الإفتراضية؟"
+
+#: options.php:536
+#@ rpp
+msgid "Reset options"
+msgstr "إستيعاد الخيارات"
+
+#: template-builtin.php:35
+#, php-format
+#@ rpp
+msgid "%f is the RPP match score between the current entry and this related entry. You are seeing this value because you are logged in to WordPress as an administrator. It is not shown to regular visitors."
+msgstr "%f هي نسبة التشابه بين المحتوى الحالي و المحتويات ذات الصلة. أنت تراه لأنك سجلت دخول كأدمين للورد بريس. لن يتم إظهار هذه النسبة للعامة. "
+
+#: template-metabox.php:12
+#@ rpp
+msgid "These are the related entries for this entry. Updating this post may change these related posts."
+msgstr "هذه هي المحتويات ذات الصلة لهذا الموضوع. في حالة التعديل في هذه المشاركة قد تتغير المحتويات ذات الصلة."
+
+#: template-metabox.php:26
+#@ rpp
+msgid "Whether all of these related entries are actually displayed and how they are displayed depends on your RPP display options."
+msgstr "إذا كانت جميع هذه المحتويات ذات الصلة هي في الواقع معروضة و كيفية عرضها فهذه تتوقف على الخيارات الخاصة بــRPP."
+
